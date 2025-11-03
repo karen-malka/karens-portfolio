@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" id="page" data-page="index.html">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <title>Karen Shamir</title>
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><button id="home-button">Home</button></li>
+          <li><button id="projects-button">Projects</button></li>
+          <li><button id="about-button">About</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="home"></div>
+    <img src="images/name-design.svg" class="name" />
+
+    <h1 class="white heading" id="projects">PROJECTS</h1>
+    <div class="websites">
+      <div class="website-box">
+        <img
+          class="preview"
+          src="images/websites/waterford-website-preview.png"
+        />
+        <div class="website-info">
+          <div class="website-two-col">
+            <h2 class="white">Waterford</h2>
+            <img src="images/websites/waterford-langs.png" />
+          </div>
+          <div>
+            <p>
+              An informational website on the Waterford research team and its
+              initiatives
+            </p>
+          </div>
+          <div class="website-two-col">
+            <button id="waterford" class="web-btn">Visit Site</button>
+            <a class="learn-more">Learn more...</a>
+          </div>
+        </div>
+      </div>
+      <div class="website-box">
+        <img
+          class="preview"
+          src="images/websites/artalcove-website-preview.png"
+        />
+        <div class="website-info">
+          <div class="website-two-col">
+            <h2 class="white">ArtAlcove</h2>
+            <img src="images/websites/artalcove-langs.png" />
+          </div>
+          <div>
+            <p>
+              An information retrieval system where users find art materials
+              according to a project
+            </p>
+          </div>
+          <div class="website-two-col">
+            <button id="artalcove" class="web-btn">Visit Site</button>
+            <a class="learn-more">Learn more...</a>
+          </div>
+        </div>
+      </div>
+      <div class="website-box">
+        <img
+          class="preview"
+          src="images/websites/applefest-website-preview.png"
+        />
+        <div class="website-info">
+          <div class="website-two-col">
+            <h2 class="white">Apple Fest</h2>
+            <img src="images/websites/applefest-langs.png" />
+          </div>
+          <div>
+            <p>A promotional website informing about a local event</p>
+          </div>
+          <div class="website-two-col">
+            <button id="applefest" class="web-btn">Visit Site</button>
+            <a class="learn-more">Learn more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <div>
+        <h2 class="white project-heading">
+          <a href="asset-app.html">Asset Management App</a>
+        </h2>
+      </div>
+      <div>
+        <img
+          class="project-img"
+          src="images/projects/Asset Management App.png"
+        />
+      </div>
+    </div>
+
+    <div class="book-body">
+      <div class="book-nav">
+        <button class="btn prev" onclick="prevPage()">Prev</button>
+      </div>
+      <div class="book">
+        <div class="sheet">
+          <div class="front book-title">
+            <h2 class="title">My Art</h2>
+            <h3>Digital and Physical Drawings</h3>
+          </div>
+          <div class="back">
+            <img src="images/digital-drawings/Book - 1.png" />
+          </div>
+        </div>
+
+        <div class="sheet">
+          <div class="front">
+            <img src="images/digital-drawings/Book - 2.png" />
+          </div>
+          <div class="back">
+            <img src="images/digital-drawings/Book - 3.png" />
+          </div>
+        </div>
+
+        <div class="sheet">
+          <div class="front">
+            <img src="images/digital-drawings/Book - 4.png" />
+          </div>
+          <div class="back">
+            <img src="images/digital-drawings/Book - 6.png" />
+          </div>
+        </div>
+
+        <div class="sheet">
+          <div class="front">
+            <img src="images/digital-drawings/Book - 5.png" />
+          </div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="book-nav">
+        <button class="btn next" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/book.js" defer></script>
+  <script src="scripts/nav.js" defer></script>
+</html>
