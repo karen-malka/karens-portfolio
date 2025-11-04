@@ -231,14 +231,20 @@ video {
   height: 40vw;
 }
 
-.websites {
+.websites,
+.prototypes {
   display: flex;
   flex-direction: row;
   margin-left: 5vw;
   margin-right: 5vw;
 }
 
-.website-box {
+.prototypes {
+  height: 45vw;
+}
+
+.website-box,
+.prototype-box {
   border: 1px solid #94b9fe;
   background-color: #1d254a;
   box-shadow: 4px 4px 4px #94b9fe;
@@ -249,18 +255,39 @@ video {
   margin: 15px;
 }
 
+.prototype-box {
+  width: 45%;
+  background-color: #0b395d;
+  border: 1px solid #94eefe;
+  box-shadow: 4px 4px 4px #94eefe;
+  color: #94eefe;
+}
+
+.prototypes .preview {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+  width: auto;
+}
+
 .preview {
   width: 100%;
   margin-bottom: 15px;
 }
 
-.website-info {
+.website-info,
+.prototype-info {
   display: flex;
   flex-direction: column;
   background-color: #121332;
   border-radius: 20px;
   padding: 20px;
   height: 200px;
+}
+
+.prototype-info {
+  background-color: #02234b;
 }
 
 .website-two-col {
@@ -278,12 +305,14 @@ video {
   width: auto;
 }
 
-.websites p {
+.websites p,
+.prototypes p {
   font-size: 20px;
   height: 70px;
 }
 
-.learn-more {
+.learn-more,
+.blue-learn-more {
   font-size: 15px;
   font-style: italic;
   font-weight: bold;
@@ -295,7 +324,12 @@ video {
   padding-top: 20px;
 }
 
-.learn-more::after {
+.blue-learn-more {
+  color: #94eefe;
+}
+
+.learn-more::after,
+.blue-learn-more::after {
   content: "";
   position: absolute;
   left: 0;
@@ -308,11 +342,17 @@ video {
   transform: translate3d(-100%, 0, 0);
 }
 
-.learn-more:hover::after {
+.blue-learn-more::after {
+  background-color: #94eefe;
+}
+
+.learn-more:hover::after,
+.blue-learn-more:hover::after {
   transform: translate3d(0, 0, 0);
 }
 
-.web-btn {
+.web-btn,
+.prototype-btn {
   color: white;
   font-weight: bold;
   background-color: #654a90;
@@ -325,10 +365,19 @@ video {
   transition: 0.3s;
 }
 
+.prototype-btn {
+  background-color: #4492ff;
+}
+
+.prototype-btn:hover {
+  background-color: #aed0ff;
+}
+
 .web-btn:hover {
   background-color: #432378;
 }
 
-.web-btn:active {
+.web-btn:active,
+.prototype-btn:active {
   transform: scale(0.85);
 }
