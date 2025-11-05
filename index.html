@@ -10,6 +10,7 @@
         <ul>
           <li><button id="home-button">Home</button></li>
           <li><button id="projects-button">Projects</button></li>
+          <li><button id="designs-button">Designs</button></li>
           <li><button id="about-button">About</button></li>
         </ul>
       </nav>
@@ -93,7 +94,7 @@
         />
         <div class="prototype-info">
           <div class="website-two-col">
-            <h2 class="white">HVAC Asset Management (App)</h2>
+            <h2 class="white">HVAC Asset Management</h2>
           </div>
           <div>
             <p>
@@ -116,7 +117,28 @@
         />
         <div class="prototype-info">
           <div class="website-two-col">
-            <h2 class="white">GreenGo (App)</h2>
+            <h2 class="white">GreenGo</h2>
+          </div>
+          <div>
+            <p>
+              A rideshare system where drivers can carpool and earn points by
+              being sustainable
+            </p>
+          </div>
+          <div class="website-two-col">
+            <button id="artalcove" class="prototype-btn">View Prototype</button>
+            <a class="blue-learn-more">Learn more...</a>
+          </div>
+        </div>
+      </div>
+      <div class="prototype-box">
+        <img
+          class="preview"
+          src="images/projects/sustainable-rideshare-app-preview.png"
+        />
+        <div class="prototype-info">
+          <div class="website-two-col">
+            <h2 class="white">GreenGo</h2>
           </div>
           <div>
             <p>
@@ -132,6 +154,8 @@
       </div>
     </div>
 
+    <h1 class="white heading" id="designs">DESIGNS</h1>
+
     <div class="book-body">
       <div class="book-nav">
         <button class="btn prev" onclick="prevPage()">Prev</button>
@@ -139,8 +163,12 @@
       <div class="book">
         <div class="sheet">
           <div class="front book-title">
-            <h2 class="title">My Art</h2>
-            <h3>Digital and Physical Drawings</h3>
+            <div class="border">
+              <h2 class="title">My Art</h2>
+              <h3>
+                A Book of Digital Drawings, Colored Pencil Creations, and Quotes
+              </h3>
+            </div>
           </div>
           <div class="back">
             <img src="images/digital-drawings/Book - 1.png" />
@@ -176,8 +204,19 @@
         <button class="btn next" onclick="nextPage()">Next</button>
       </div>
     </div>
+
+    <h2 class="white heading">Photography</h2>
+
+    <div class="carousel-container">
+      <a class="carousel-prev" onclick="scrollSlides(-1)">&lt</a>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="slides"></div>
+      </div>
+      <a class="carousel-next" onclick="scrollSlides(1)">></a>
+    </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/book.js" defer></script>
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/photo-gallery.js" defer></script>
 </html>

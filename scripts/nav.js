@@ -1,7 +1,7 @@
 const page = $("#page").data("page");
 
 $(document).ready(function () {
-  const hash = window.location.hash; // e.g. "#projects"
+  const hash = window.location.hash;
 
   if (hash) {
     const $target = $(hash);
@@ -47,5 +47,18 @@ $("#projects-button").click(function () {
     );
   } else {
     window.location.href = "index.html#projects";
+  }
+});
+
+$("#designs-button").click(function () {
+  if (page == "index.html") {
+    $("html, body").animate(
+      {
+        scrollTop: $("#designs").offset().top - 100,
+      },
+      1000
+    );
+  } else {
+    window.location.href = "index.html#designs";
   }
 });

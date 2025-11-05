@@ -61,7 +61,7 @@ a {
 }
 
 .heading {
-  font-size: 40pt;
+  font-size: 40pt !important;
   margin-left: 5vw;
   margin-right: 5vw;
   padding-top: 0px;
@@ -89,6 +89,7 @@ a {
 
 .white {
   color: white;
+  font-size: 20px;
 }
 
 .book-body {
@@ -96,7 +97,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   perspective: 2500px;
   text-align: center;
@@ -113,7 +114,8 @@ a {
 }
 
 .btn {
-  background: #4492ff;
+  background: #654a90;
+  box-shadow: 1px 1px 2px white;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -124,7 +126,7 @@ a {
 }
 
 .btn:hover {
-  background: #aed0ff;
+  background: #432378;
 }
 
 .btn:disabled {
@@ -144,11 +146,26 @@ a {
 
 .book-title {
   background-color: #aed0ff;
+  font-family: cursive;
+}
+
+.border {
+  height: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(#0b395d, #654a90) 1;
+}
+
+.book-title h3 {
+  padding: 30px;
 }
 
 .title {
-  padding-top: 150px;
-  font-size: 25pt;
+  padding-top: 50px;
+  font-size: 30pt;
 }
 
 /* Each sheet = one physical page that flips */
@@ -224,6 +241,61 @@ a {
   z-index: 10;
 }
 
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: auto 5vw;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  margin: 0 0;
+  padding: 0 8%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 calc(100% / 3);
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-prev,
+.carousel-next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px 0 0 3px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.carousel-next {
+  border-radius: 0 3px 3px 0;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: #4492ff;
+}
+
 video {
   text-align: center;
   display: block;
@@ -239,10 +311,6 @@ video {
   margin-right: 5vw;
 }
 
-.prototypes {
-  height: 45vw;
-}
-
 .website-box,
 .prototype-box {
   border: 1px solid #94b9fe;
@@ -256,7 +324,6 @@ video {
 }
 
 .prototype-box {
-  width: 45%;
   background-color: #0b395d;
   border: 1px solid #94eefe;
   box-shadow: 4px 4px 4px #94eefe;
@@ -267,8 +334,6 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 50%;
-  width: auto;
 }
 
 .preview {
