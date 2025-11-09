@@ -508,7 +508,7 @@ video {
   }
 } */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .prototypes,
   .websites {
     flex-direction: column;
