@@ -88,7 +88,7 @@ a {
   font-size: 20pt;
 }
 
-.projects {
+/* .projects {
   display: flex;
   flex-direction: row;
   padding-top: 0px;
@@ -98,7 +98,7 @@ a {
 
 .projects div {
   width: 45%;
-}
+} */
 
 .project-img {
   width: 150%;
@@ -330,7 +330,9 @@ video {
 .websites,
 .prototypes {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center !important;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -343,7 +345,7 @@ video {
   color: #94b9fe;
   border-radius: 20px;
   padding: 15px;
-  width: 30%;
+  width: 27.5%;
   margin: 15px;
 }
 
@@ -469,4 +471,74 @@ video {
 .web-btn:active,
 .prototype-btn:active {
   transform: scale(0.85);
+}
+
+@media (max-width: 1300px) {
+  .website-box,
+  .prototype-box {
+    width: 26%;
+  }
+  .website-info,
+  .prototype-info {
+    height: 250px;
+  }
+  .websites p,
+  .prototypes p {
+    height: 120px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .website-box,
+  .prototype-box {
+    width: 41%;
+  }
+  .flyers {
+    width: 95vw;
+    height: auto;
+  }
+
+  .title {
+    padding-top: 40px;
+    font-size: 20pt;
+  }
+
+  .book-body h3 {
+    font-size: 15pt;
+  }
+}
+
+@media (max-width: 800px) {
+  .prototypes,
+  .websites {
+    flex-direction: column;
+  }
+
+  .website-box,
+  .prototype-box {
+    width: 90%;
+  }
+
+  .slide {
+    flex: 0 0 calc(100% / 2);
+  }
+
+  .book-body {
+    width: 90vw;
+    height: auto;
+  }
+
+  .book {
+    width: 666px;
+    height: 323px;
+  }
+
+  .title {
+    padding-top: 8px;
+    font-size: 14pt;
+  }
+
+  .book-body h3 {
+    font-size: 11pt;
+  }
 }
