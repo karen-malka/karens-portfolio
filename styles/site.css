@@ -3,6 +3,11 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .name {
@@ -62,9 +67,21 @@ a {
 
 .heading {
   font-size: 40pt !important;
+  background-image: linear-gradient(to right, #4492ff, #654a90);
+  background-size: 100% 10px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.heading,
+.heading2 {
   margin-left: 5vw;
   margin-right: 5vw;
   padding-top: 0px;
+}
+
+.heading2 {
+  font-size: 30pt !important;
 }
 
 .project-heading {
@@ -90,6 +107,13 @@ a {
 .white {
   color: white;
   font-size: 20px;
+}
+
+.flyers {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 95vh;
 }
 
 .book-body {
