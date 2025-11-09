@@ -488,7 +488,7 @@ video {
   }
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .website-box,
   .prototype-box {
     width: 41%;
@@ -506,9 +506,9 @@ video {
   .book-body h3 {
     font-size: 15pt;
   }
-}
+} */
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .prototypes,
   .websites {
     flex-direction: column;
@@ -517,6 +517,11 @@ video {
   .website-box,
   .prototype-box {
     width: 90%;
+  }
+
+  .flyers {
+    width: 95vw;
+    height: auto;
   }
 
   .slide {
@@ -554,8 +559,8 @@ video {
     font-size: 15pt !important;
   }
 
-  .learn-more,.blue-learn-more {
+  .learn-more,
+  .blue-learn-more {
     font-size: 15pt !important;
   }
-
 }
