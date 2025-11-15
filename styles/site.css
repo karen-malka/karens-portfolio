@@ -73,7 +73,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.heading,
+.index-body .heading,
 .heading2 {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -110,6 +110,7 @@ a {
 }
 
 .flyers {
+  margin-top: -50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -117,6 +118,7 @@ a {
 }
 
 .book-body {
+  margin-top: -50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -471,6 +473,40 @@ video {
 .web-btn:active,
 .prototype-btn:active {
   transform: scale(0.85);
+}
+
+.edges {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.web-title {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.web-title h1 {
+  font-size: 40pt;
+}
+
+.web-title h2 {
+  font-size: 20pt;
+}
+
+.two-col {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.two-col div {
+  width: 50%;
+}
+
+.web-img {
+  margin-top: 150px;
 }
 
 @media (max-width: 1300px) {
