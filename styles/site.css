@@ -127,10 +127,12 @@ a {
   overflow: hidden;
   perspective: 2500px;
   text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .book-nav {
-  width: 33%;
+  width: 25%;
   position: relative;
   margin-top: 100px;
   display: flex;
@@ -570,8 +572,8 @@ video {
   }
 
   .book {
-    width: 1200px;
-    height: 700px;
+    width: 100vw;
+    height: 70vh;
   }
 
   .title {
