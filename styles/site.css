@@ -573,16 +573,16 @@ video {
 
   .book {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
   }
 
   .title {
-    padding-top: 8px;
-    font-size: 14pt;
+    padding-top: 100px;
+    font-size: 20pt;
   }
 
-  .book-body h3 {
-    font-size: 11pt;
+  .hidden {
+    display: none;
   }
 
   h2 {
