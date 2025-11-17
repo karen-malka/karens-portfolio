@@ -24,6 +24,10 @@ $("#applefest").click(function () {
   window.open("https://karen-malka.github.io/apple-fest/", "_blank");
 });
 
+$("#bearbargain").click(function () {
+  window.open("http://bear-bargain.myartsonline.com/", "_blank");
+});
+
 $("#asset-management").click(function () {
   window.open(
     "https://www.figma.com/proto/67sdgVBRLS03E303Unq9FP/Daikin-Building-Walkthrough-Assets?node-id=1-2&starting-point-node-id=1%3A2&t=gp7XM7PYbGb45dTm-1",

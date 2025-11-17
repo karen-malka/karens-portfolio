@@ -566,12 +566,12 @@ video {
 
   .book-body {
     width: 90vw;
-    height: auto;
+    height: 80vh;
   }
 
   .book {
-    width: 666px;
-    height: 323px;
+    width: 800px;
+    height: 400px;
   }
 
   .title {
