@@ -1,40 +1,40 @@
 const photos = [
-  "images/photography/multicolor-water.jpg",
-  "images/photography/icicle-sunset.jpg",
-  "images/photography/cornell-flowers.HEIC",
-  "images/photography/pink-flower.jpg",
-  "images/photography/pink-flowers.jpg",
-  "images/photography/rainbow-sunset.jpg",
-  "images/photography/snowy-walk.jpg",
-  "images/photography/spider-web.jpg",
-  "images/photography/beach-sunset.jpg",
-  "images/photography/cat-sunset.jpg",
-  "images/photography/beach-sunglasses.HEIC",
-  "images/photography/houses-sunset.jpg",
-  "images/photography/window-golden-hr.HEIC",
-  "images/photography/fire.HEIC",
-  "images/photography/cornell-sunset.jpg",
-  "images/photography/fall-tree.jpg",
-  "images/photography/sun-leaf.jpg",
-  "images/photography/butterfly-garden.HEIC",
-  "images/photography/green-sunset.HEIC",
-  "images/photography/gorge-nature.jpg",
-  "images/photography/nature.jpg",
-  "images/photography/waterfall.jpg",
-  "images/photography/watkins-glen.jpg",
-  "images/photography/japanese-gardens.HEIC",
-  "images/photography/icicle.jpg",
-  "images/photography/keys-rome.jpg",
-  "images/photography/tree-sunray.jpg",
-  "images/photography/bird-flying.jpg",
-  "images/photography/cave.jpg",
+  { link: "images/photography/multicolor-water.jpg", text: "Multicolor Water" },
+  { link: "images/photography/icicle-sunset.jpg", text: "Icicle Sunset" },
+  { link: "images/photography/cornell-flowers.HEIC", text: "" },
+  { link: "images/photography/pink-flower.jpg", text: "" },
+  { link: "images/photography/pink-flowers.jpg", text: "" },
+  { link: "images/photography/rainbow-sunset.jpg", text: "" },
+  { link: "images/photography/snowy-walk.jpg", text: "" },
+  { link: "images/photography/spider-web.jpg", text: "" },
+  { link: "images/photography/beach-sunset.jpg", text: "" },
+  { link: "images/photography/cat-sunset.jpg", text: "" },
+  { link: "images/photography/beach-sunglasses.HEIC", text: "" },
+  { link: "images/photography/houses-sunset.jpg", text: "" },
+  { link: "images/photography/window-golden-hr.HEIC", text: "" },
+  { link: "images/photography/fire.HEIC", text: "" },
+  { link: "images/photography/cornell-sunset.jpg", text: "" },
+  { link: "images/photography/fall-tree.jpg", text: "" },
+  { link: "images/photography/sun-leaf.jpg", text: "" },
+  { link: "images/photography/butterfly-garden.HEIC", text: "" },
+  { link: "images/photography/green-sunset.HEIC", text: "" },
+  { link: "images/photography/gorge-nature.jpg", text: "" },
+  { link: "images/photography/nature.jpg", text: "" },
+  { link: "images/photography/waterfall.jpg", text: "" },
+  { link: "images/photography/watkins-glen.jpg", text: "" },
+  { link: "images/photography/japanese-gardens.HEIC", text: "" },
+  { link: "images/photography/icicle.jpg", text: "" },
+  { link: "images/photography/keys-rome.jpg", text: "" },
+  { link: "images/photography/tree-sunray.jpg", text: "" },
+  { link: "images/photography/bird-flying.jpg", text: "" },
+  { link: "images/photography/cave.jpg", text: "" },
 ];
 
 const slidesTrack = document.getElementById("slides");
 let currIdx = 0;
 
 photos.forEach((photo) => {
-  slidesTrack.innerHTML += `<div class="slide"><img src="${photo}"></div>`;
+  slidesTrack.innerHTML += `<div class="slide"><img src="${photo.link}"><div class="overlay"><p class="white caption">${photo.text}</p></div></div>`;
 });
 
 for (let i = 0; i < 3; i++) {
@@ -61,6 +61,6 @@ function scrollSlides(direction = 1) {
   }
 }
 
-setInterval(() => {
-  scrollSlides(1);
-}, 2000);
+// setInterval(() => {
+//   scrollSlides(1);
+// }, 2000);
