@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" id="page" data-page="designs.html">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+    <title>Karen Shamir</title>
+  </head>
+  <body class="index-body">
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><button id="home-button">Home</button></li>
+          <li class="dropdown">
+            <button id="projects-button">Projects &#128899;</button>
+            <ul class="dropdown-content">
+              <li><button id="websites-button">Websites</button></li>
+              <li>
+                <button id="prototypes-button">Prototypes</button>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <button id="designs-button">Designs &#128899;</button>
+            <ul class="dropdown-content">
+              <li><button id="photographs-button">Photos</button></li>
+              <li><button id="art-button">Art</button></li>
+              <li><button id="flyers-button">Flyers</button></li>
+            </ul>
+          </li>
+          <li><button id="about-button">About</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1 class="white heading" id="designs">DESIGNS</h1>
+
+    <h2 class="white heading2" id="photographs">Photographs I've Captured</h2>
+
+    <div class="carousel-container">
+      <a class="carousel-prev" onclick="scrollSlides(-1)">&lt</a>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="slides"></div>
+      </div>
+      <a class="carousel-next" onclick="scrollSlides(1)">></a>
+    </div>
+
+    <h2 class="white heading2" id="art">Art I've Created by Hand</h2>
+
+    <div class="book-body">
+      <div class="book-nav">
+        <button class="btn prev" onclick="prevPage()">&lt</button>
+      </div>
+      <div class="book">
+        <div class="sheet">
+          <div class="front book-title">
+            <div class="border">
+              <h2 class="title">My Art</h2>
+              <h3 class="hidden">
+                A Book of Digital Drawings, Colored Pencil Creations, and Quotes
+              </h3>
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/digital-drawings/Book - 1.png" />
+          </div>
+        </div>
+
+        <div class="sheet">
+          <div class="front">
+            <img src="images/digital-drawings/Book - 2.png" />
+          </div>
+          <div class="back">
+            <img src="images/digital-drawings/Book - 3.png" />
+          </div>
+        </div>
+
+        <div class="sheet">
+          <div class="front">
+            <img src="images/digital-drawings/Book - 4.png" />
+          </div>
+          <div class="back">
+            <img src="images/digital-drawings/Book - 6.png" />
+          </div>
+        </div>
+
+        <div class="sheet">
+          <div class="front">
+            <img src="images/digital-drawings/Book - 5.png" />
+          </div>
+          <div class="back"></div>
+        </div>
+      </div>
+      <div class="book-nav">
+        <button class="btn next" onclick="nextPage()">></button>
+      </div>
+    </div>
+
+    <h2 class="white heading2" id="flyers">Flyers I've Designed</h2>
+    <img class="flyers" src="images/projects/flyers.png" />
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/book.js" defer></script>
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/photo-gallery.js" defer></script>
+</html>

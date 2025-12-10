@@ -53,7 +53,7 @@ ul li button {
 
 ul li button:hover {
   cursor: pointer;
-  background-color: #4492ff;
+  background-color: #654a90;
 }
 
 .below-nav {
@@ -95,6 +95,11 @@ a {
   display: block;
 }
 
+#projects,
+#designs {
+  margin-top: 70px;
+}
+
 .heading {
   font-size: 40pt !important;
   background-image: linear-gradient(to right, #4492ff, #654a90);
@@ -117,18 +122,6 @@ a {
 .project-heading {
   font-size: 20pt;
 }
-
-/* .projects {
-  display: flex;
-  flex-direction: row;
-  padding-top: 0px;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
-.projects div {
-  width: 45%;
-} */
 
 .project-img {
   width: 150%;
@@ -372,66 +365,48 @@ a {
   background-color: #4492ff;
 }
 
-video {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  height: 40vw;
-}
-
-.websites,
-.prototypes {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center !important;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
-.website-box,
-.prototype-box {
+.web-box,
+.proto-box {
   border: 1px solid #94b9fe;
   background-color: #1d254a;
   box-shadow: 4px 4px 4px #94b9fe;
   color: #94b9fe;
   border-radius: 20px;
   padding: 15px;
-  width: 44%;
-  margin: 15px;
+  width: 88%;
+  margin: 5vw;
+  margin-top: 0;
 }
 
-.prototype-box {
-  background-color: #0b395d;
-  border: 1px solid #94eefe;
-  box-shadow: 4px 4px 4px #94eefe;
-  color: #94eefe;
-  width: 27.5%;
+.web-box h1,
+.proto-box h1 {
+  font-size: 30pt !important;
 }
 
-.prototypes .preview {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.web-box p,
+.proto-box p {
+  font-size: 15pt !important;
+}
+
+.proto-box {
+  background-color: #111e30;
+  border: 1px solid #5786c7;
+  box-shadow: 4px 4px 4px #5786c7;
+  color: #5786c7;
+}
+
+.proto-box .web-img {
+  margin-top: 0 !important;
+}
+
+.proto-box .skills p {
+  background: linear-gradient(#111e30, #111e30) padding-box,
+    linear-gradient(to right, #4492ff, #654a90) border-box !important;
 }
 
 .preview {
   width: 100%;
   margin-bottom: 15px;
-}
-
-.website-info,
-.prototype-info {
-  display: flex;
-  flex-direction: column;
-  background-color: #121332;
-  border-radius: 20px;
-  padding: 20px;
-  height: 200px;
-}
-
-.prototype-info {
-  background-color: #02234b;
 }
 
 .website-two-col {
@@ -449,83 +424,6 @@ video {
   width: auto;
 }
 
-.websites p,
-.prototypes p {
-  font-size: 20px;
-  height: 70px;
-}
-
-.learn-more,
-.blue-learn-more {
-  font-size: 15px;
-  font-style: italic;
-  font-weight: bold;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  color: #94b9fe;
-  padding-top: 20px;
-}
-
-.blue-learn-more {
-  color: #94eefe;
-}
-
-.learn-more::after,
-.blue-learn-more::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #94b9fe;
-  transition: opacity 300ms, transform 300ms;
-  opacity: 1;
-  transform: translate3d(-100%, 0, 0);
-}
-
-.blue-learn-more::after {
-  background-color: #94eefe;
-}
-
-.learn-more:hover::after,
-.blue-learn-more:hover::after {
-  transform: translate3d(0, 0, 0);
-}
-
-.web-btn,
-.prototype-btn {
-  color: white;
-  font-weight: bold;
-  background-color: #654a90;
-  border: none;
-  box-shadow: 1px 1px 2px white;
-  border-radius: 10px;
-  width: 40%;
-  height: 40px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.prototype-btn {
-  background-color: #4492ff;
-}
-
-.prototype-btn:hover {
-  background-color: #aed0ff;
-}
-
-.web-btn:hover {
-  background-color: #432378;
-}
-
-.web-btn:active,
-.prototype-btn:active {
-  transform: scale(0.85);
-}
-
 .edges {
   margin-right: 5vw;
   margin-left: 5vw;
@@ -534,7 +432,7 @@ video {
 .web-title {
   margin-left: 5vw;
   margin-right: 5vw;
-  margin-top: 100px;
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -544,6 +442,7 @@ video {
 
 .web-title h2 {
   font-size: 20pt;
+  margin: 0;
 }
 
 .two-col {
@@ -557,25 +456,101 @@ video {
 }
 
 .web-img {
-  margin-top: 150px;
+  margin-top: 20px;
 }
 
 .caption {
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+  font-size: 12pt;
+  margin: 0;
+}
+
+.web-title2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 65px;
+}
+
+.web-title2 img {
+  width: 25px;
+  height: auto;
+}
+
+.web-title2 a {
+  text-align: center;
+  padding-top: 35px;
+  width: 50px;
+  cursor: pointer;
+  color: #4492ff;
+  font-size: 10pt;
+}
+
+.web-title2 a:hover {
+  color: #654a90;
+}
+
+.hidden2 {
+  position: relative;
+}
+
+.hidden1 {
+  visibility: hidden;
+  position: absolute;
+  top: 35px;
+  bottom: 0;
+  left: 12.5px;
+  right: 0;
+}
+
+.web-title2 a:hover .hidden1 {
+  visibility: visible;
+}
+
+.skills,
+.tags {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100% !important;
+  color: white;
+}
+
+.tags {
+  margin: 0;
+  justify-content: center;
+}
+
+.skills img {
+  height: 30px;
+  width: auto;
+}
+
+.skills p,
+.tags p {
+  padding: 5px;
+  border: 1.5px solid transparent;
+  border-image: none;
+  background: linear-gradient(#08021b, #08021b) padding-box,
+    linear-gradient(to right, #4492ff, #654a90) border-box;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.skills p {
+  font-size: 12pt !important;
 }
 
 @media (max-width: 1100px) {
-  .prototypes,
-  .websites {
-    flex-direction: column;
-  }
-
-  .website-box,
-  .prototype-box {
-    width: 90%;
-  }
-
   .flyers {
     width: 95vw;
     height: auto;
@@ -613,11 +588,6 @@ video {
   }
 
   button {
-    font-size: 15pt !important;
-  }
-
-  .learn-more,
-  .blue-learn-more {
     font-size: 15pt !important;
   }
 }
