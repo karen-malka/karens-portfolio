@@ -13,100 +13,82 @@ $(document).ready(function () {
 });
 
 $("#home-button").click(function () {
-  if (page == "index.html") {
-    $("html, body").animate(
-      {
-        scrollTop: $("#home").offset().top,
-      },
-      1000
-    );
-  } else {
-    window.location.href = "index.html";
-  }
+  $("html, body").animate(
+    {
+      scrollTop: $("#home").offset().top - 100,
+    },
+    1000
+  );
 });
 
 $("#projects-button").click(function () {
-  window.location.href = "projects.html";
-});
-
-$("#websites-button").click(function () {
-  if (page == "projects.html") {
-    $("html, body").animate(
-      {
-        scrollTop: $("#websites").offset().top - 100,
-      },
-      1000
-    );
-  } else {
-    window.location.href = "projects.html#websites";
-  }
-});
-
-$("#prototypes-button").click(function () {
-  if (page == "projects.html") {
-    $("html, body").animate(
-      {
-        scrollTop: $("#prototypes").offset().top - 100,
-      },
-      1000
-    );
-  } else {
-    window.location.href = "projects.html#prototypes";
-  }
-});
-
-$("#photographs-button").click(function () {
-  if (page == "designs.html") {
-    $("html, body").animate(
-      {
-        scrollTop: $("#photographs").offset().top - 100,
-      },
-      1000
-    );
-  } else {
-    window.location.href = "designs.html#photographs";
-  }
-});
-
-$("#art-button").click(function () {
-  if (page == "designs.html") {
-    $("html, body").animate(
-      {
-        scrollTop: $("#art").offset().top - 100,
-      },
-      1000
-    );
-  } else {
-    window.location.href = "designs.html#art";
-  }
-});
-
-$("#flyers-button").click(function () {
-  if (page == "designs.html") {
-    $("html, body").animate(
-      {
-        scrollTop: $("#flyers").offset().top - 100,
-      },
-      1000
-    );
-  } else {
-    window.location.href = "designs.html#flyers";
-  }
+  $("html, body").animate(
+    {
+      scrollTop: $("#projects").offset().top - 100,
+    },
+    1000
+  );
 });
 
 $("#designs-button").click(function () {
-  window.location.href = "designs.html";
+  $("html, body").animate(
+    {
+      scrollTop: $("#designs").offset().top - 100,
+    },
+    1000
+  );
+});
+
+$("#websites-button").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#websites").offset().top - 100,
+    },
+    1000
+  );
+});
+
+$("#prototypes-button").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#prototypes").offset().top - 100,
+    },
+    1000
+  );
+});
+
+$("#photographs-button").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#photographs").offset().top - 100,
+    },
+    1000
+  );
+});
+
+$("#art-button").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#art").offset().top - 100,
+    },
+    1000
+  );
+});
+
+$("#flyers-button").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $("#flyers").offset().top - 100,
+    },
+    1000
+  );
 });
 
 $("#about-button").click(function () {
-  if (page == "index.html") {
-    $("html, body").animate(
-      {
-        scrollTop: $("#about").offset().top - 100,
-      },
-      1000
-    );
-  } else {
-    window.location.href = "index.html#about";
-  }
+  $("html, body").animate(
+    {
+      scrollTop: $("#about").offset().top - 100,
+    },
+    1000
+  );
 });

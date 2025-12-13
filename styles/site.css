@@ -109,10 +109,14 @@ a {
 }
 
 .index-body .heading,
-.heading2 {
+.heading2, .intro {
   margin-left: 5vw;
   margin-right: 5vw;
   padding-top: 0px;
+}
+
+.intro {
+  margin-top: 40px;
 }
 
 .heading2 {
@@ -164,7 +168,7 @@ a {
   z-index: 20;
 }
 
-.btn {
+.btn, .resume-btn {
   background: #654a90;
   box-shadow: 1px 1px 2px white;
   color: #fff;
@@ -176,8 +180,23 @@ a {
   transition: 0.3s;
 }
 
-.btn:hover {
+.btn:hover, .resume-btn:hover {
   background: #432378;
+}
+
+.btn:active, .resume-btn:active {
+  transform: scale(0.85);
+}
+
+.blue p {
+  color: #4492ff;
+  padding-right: 20px;
+  display: inline;
+  font-size: 16pt !important;
+}
+
+.blue {
+  margin-bottom: 20px;
 }
 
 .btn:disabled {
@@ -390,9 +409,9 @@ a {
 
 .proto-box {
   background-color: #111e30;
-  border: 1px solid #5786c7;
+  border: 1px solid #4492ff;
   box-shadow: 4px 4px 4px #5786c7;
-  color: #5786c7;
+  color: #4492ff;
 }
 
 .proto-box .web-img {
@@ -400,7 +419,7 @@ a {
 }
 
 .proto-box .skills p {
-  background: linear-gradient(#111e30, #111e30) padding-box,
+  background: linear-gradient(#09101b, #09101b) padding-box,
     linear-gradient(to right, #4492ff, #654a90) border-box !important;
 }
 
@@ -443,6 +462,10 @@ a {
 .web-title h2 {
   font-size: 20pt;
   margin: 0;
+}
+
+.home-title {
+  margin-top: 150px;
 }
 
 .two-col {
@@ -548,6 +571,17 @@ a {
 
 .skills p {
   font-size: 12pt !important;
+}
+
+.heading2 p {
+  margin-top: -10px;
+  font-size: 20pt !important;
+}
+
+.resume-btn {
+  margin-left: 5vw;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 @media (max-width: 1100px) {
