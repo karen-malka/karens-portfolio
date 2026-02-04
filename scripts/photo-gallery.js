@@ -60,6 +60,12 @@ const photos = [
     desc: "I saw this wild cat sitting in front of the sunset and had to give it the spotlight",
   },
   {
+    link: "images/photography/cruise-sunset.jpg",
+    text: "Cruise Sunset",
+    tags: "<p>2025</p><p>Great Stirrup Cay, Bahamas</p>",
+    desc: "As the cruise ship left the island, I captured this sunset with the beautiful colors reflecting on the water",
+  },
+  {
     link: "images/photography/beach-sunglasses.HEIC",
     text: "Sunglasses in the Sand",
     tags: "<p>2024</p><p>Fort Lauderdale, FL</p>",
@@ -108,10 +114,22 @@ const photos = [
     desc: "I've always loved butterflies, and this garden was full of them fluttering around--so magical!",
   },
   {
+    link: "images/photography/volcano.jpg",
+    text: "Volcano in the Distance",
+    tags: "<p>2026</p><p>Arenal Volcano, Costa Rica</p>",
+    desc: "After a long hike with my friend, we finally reached a beautiful viewpoint of the volcano from a hanging bridge",
+  },
+  {
     link: "images/photography/green-sunset.HEIC",
     text: "Green Path in Sunset",
     tags: "<p>2024</p><p>Cornell University, NY</p>",
     desc: "This is one of my favorite paths on campus, and the colors that the sun shone through made for a mesmerizing photo",
+  },
+  {
+    link: "images/photography/rainbow.jpg",
+    text: "Rainbow Scene",
+    tags: "<p>2026</p><p>Tigre Waterfalls, Costa Rica</p>",
+    desc: "A tough hike through the rain led to this beautiful scene of a rainbow shining through the mist with a beautiful view",
   },
   {
     link: "images/photography/gorge-nature.jpg",
@@ -138,10 +156,22 @@ const photos = [
     desc: "The light shone behind the waterfall making a really cool effect on the droplets of water from the angle that I captured the photo",
   },
   {
+    link: "images/photography/chairs-scenery.jpg",
+    text: "Chairs with a View",
+    tags: "<p>2026</p><p>Costa Rica</p>",
+    desc: "The chairs overlooking the serene view of Costa Rica's natural beauty created a peaceful and inviting scene that I wanted to capture",
+  },
+  {
     link: "images/photography/japanese-gardens.HEIC",
     text: "Japanese Garden",
     tags: "<p>2024</p><p>San Francisco, CA</p>",
     desc: "This garden was a peaceful view I saw with my dad, with beautiful landscaping and traditional elements that made for a calming photo",
+  },
+  {
+    link: "images/photography/volcanic-rock.jpg",
+    text: "Volcanic Rock Formation",
+    tags: "<p>2026</p><p>Arenal Volcano, Costa Rica</p>",
+    desc: "The unique shapes and textures of the volcanic rock formations created a dramatic and otherworldly landscape that fascinated me",
   },
   {
     link: "images/photography/icicle.jpg",
@@ -162,10 +192,10 @@ const photos = [
     desc: "The interplay of light and shadow in this forest created a mysterious and enchanting atmosphere that reminded me of a fantasy novel",
   },
   {
-    link: "images/photography/bird-flying.jpg",
-    text: "Fall Bird",
-    tags: "<p>2025</p><p>Syracuse, NY</p>",
-    desc: "A bird captured mid-flight during the fall season, showcasing the beauty of nature in motion",
+    link: "images/photography/glowing-water.jpg",
+    text: "Glowing Water",
+    tags: "<p>2026</p><p>Paquera, Costa Rica</p>",
+    desc: "The way the light reflected off the water created a mesmerizing glow that made the scene feel magical and serene",
   },
   {
     link: "images/photography/cave.jpg",
