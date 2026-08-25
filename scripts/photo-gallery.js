@@ -12,22 +12,70 @@ const photos = [
     desc: "I was on a walk, and I'd never seen a layer of ice wrapping the branches like this, and the way the sun shines against it!",
   },
   {
+    link: "images/photography/icewater.JPG",
+    text: "Icy Waters",
+    tags: "<p>2026</p><p>Glacier Bay, AK</p>",
+    desc: "",
+  },
+  {
     link: "images/photography/cornell-flowers.HEIC",
     text: "Cornell Flowers",
     tags: "<p>2023</p><p>Cornell University, NY</p>",
     desc: "The best part about spring at Cornell is the two weeks where the cherry blossoms bloom next to the libraries",
   },
   {
-    link: "images/photography/pink-flower.jpg",
-    text: "Bright Flower",
-    tags: "<p>2023</p><p>Cornell University, NY</p>",
-    desc: "On my way to class, I saw how brightly saturated this flower was and had to take a photo",
+    link: "images/photography/boatinocean.jpeg",
+    text: "Boat in the Water",
+    tags: "<p>2026</p><p>Glacier Bay, AK</p>",
+    desc: "",
   },
   {
     link: "images/photography/pink-flowers.jpg",
     text: "Pink Flowers",
     tags: "<p>2025</p><p>Cornell University, NY</p>",
     desc: "Springtime is so much fun with the bright colors, and these flowers were so pronounced that I had to take a photo",
+  },
+  {
+    link: "images/photography/flowerpath.jpeg",
+    text: "Flower Path",
+    tags: "<p>2026</p><p>Melrose, Scotland</p>",
+    desc: "",
+  },
+    {
+    link: "images/photography/castle.jpeg",
+    text: "Castle in the Distance",
+    tags: "<p>2026</p><p>Edinburgh, Scotland</p>",
+    desc: "",
+  },
+  {
+    link: "images/photography/keys-rome.jpg",
+    text: "Heart and Lock",
+    tags: "<p>2023</p><p>Rome, Italy</p>",
+    desc: "I've seen many locks on bridges before, but this one stood out to me because of the heart shape and the beautiful Rome architecture in the background",
+  },
+  {
+    link: "images/photography/tree-sunray.jpg",
+    text: "Shadowy Forest",
+    tags: "<p>2024</p><p>Moss Beach, CA</p>",
+    desc: "The interplay of light and shadow in this forest created a mysterious and enchanting atmosphere that reminded me of a fantasy novel",
+  },
+  {
+    link: "images/photography/glowing-water.jpg",
+    text: "Glowing Water",
+    tags: "<p>2026</p><p>Paquera, Costa Rica</p>",
+    desc: "The way the light reflected off the water created a mesmerizing glow that made the scene feel magical and serene",
+  },
+  {
+    link: "images/photography/scottishflowers.jpeg",
+    text: "Scottish Flowers",
+    tags: "<p>2026</p><p>Melrose, Scotland</p>",
+    desc: "",
+  },
+  {
+    link: "images/photography/pink-flower.jpg",
+    text: "Bright Flower",
+    tags: "<p>2023</p><p>Cornell University, NY</p>",
+    desc: "On my way to class, I saw how brightly saturated this flower was and had to take a photo",
   },
   {
     link: "images/photography/rainbow-sunset.jpg",
@@ -40,6 +88,12 @@ const photos = [
     text: "Snowy Walk",
     tags: "<p>2024</p><p>Cornell University, NY</p>",
     desc: "I thought this was mysterious looking, and then I made it black and white--even better!",
+  },
+   {
+    link: "images/photography/green-sunset.HEIC",
+    text: "Green Path in Sunset",
+    tags: "<p>2024</p><p>Cornell University, NY</p>",
+    desc: "This is one of my favorite paths on campus, and the colors that the sun shone through made for a mesmerizing photo",
   },
   {
     link: "images/photography/spider-web.jpg",
@@ -120,12 +174,6 @@ const photos = [
     desc: "After a long hike with my friend, we finally reached a beautiful viewpoint of the volcano from a hanging bridge",
   },
   {
-    link: "images/photography/green-sunset.HEIC",
-    text: "Green Path in Sunset",
-    tags: "<p>2024</p><p>Cornell University, NY</p>",
-    desc: "This is one of my favorite paths on campus, and the colors that the sun shone through made for a mesmerizing photo",
-  },
-  {
     link: "images/photography/rainbow.jpg",
     text: "Rainbow Scene",
     tags: "<p>2026</p><p>Tigre Waterfalls, Costa Rica</p>",
@@ -180,24 +228,6 @@ const photos = [
     desc: "The icicles glowed beautifully in the winter light, creating a magical and serene scene, with a rainbow effect on some of them",
   },
   {
-    link: "images/photography/keys-rome.jpg",
-    text: "Heart and Lock",
-    tags: "<p>2023</p><p>Rome, Italy</p>",
-    desc: "I've seen many locks on bridges before, but this one stood out to me because of the heart shape and the beautiful Rome architecture in the background",
-  },
-  {
-    link: "images/photography/tree-sunray.jpg",
-    text: "Shadowy Forest",
-    tags: "<p>2024</p><p>Moss Beach, CA</p>",
-    desc: "The interplay of light and shadow in this forest created a mysterious and enchanting atmosphere that reminded me of a fantasy novel",
-  },
-  {
-    link: "images/photography/glowing-water.jpg",
-    text: "Glowing Water",
-    tags: "<p>2026</p><p>Paquera, Costa Rica</p>",
-    desc: "The way the light reflected off the water created a mesmerizing glow that made the scene feel magical and serene",
-  },
-  {
     link: "images/photography/cave.jpg",
     text: "Glowing Cave",
     tags: "<p>2023</p><p>Palma de Mallorca, Spain</p>",
@@ -207,6 +237,7 @@ const photos = [
 
 const slidesTrack = document.getElementById("slides");
 let currIdx = 0;
+let slideInterval;
 
 photos.forEach((photo) => {
   slidesTrack.innerHTML += `<div class="slide"><img src="${photo.link}"><div class="overlay"><p class="white caption">${photo.text}</p><div class="tags">${photo.tags}</div><p class="white desc">${photo.desc}</p></div></div>`;
@@ -236,6 +267,17 @@ function scrollSlides(direction = 1) {
   }
 }
 
-// setInterval(() => {
-//   scrollSlides(1);
-// }, 2000);
+function startSlideshow() { 
+  slideInterval = setInterval(() => {
+    scrollSlides(1);
+  }, 2000);
+}
+
+function pauseSlideshow() {
+  clearInterval(slideInterval);
+}
+
+slidesTrack.addEventListener("mouseenter", pauseSlideshow);
+slidesTrack.addEventListener("mouseleave", startSlideshow);
+
+startSlideshow();
